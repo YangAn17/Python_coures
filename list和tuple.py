@@ -2,16 +2,28 @@
 #
 classmates = ["Michael", "Bob", "Tracy"]
 print(classmates)
-print(len(classmates))  # len() 函数可以获得list元素的个数
-classmates.append("Adam")  # append() 方法可以追加元素到list末尾
+
+# len() 函数可以获得list元素的个数
+print(len(classmates))
+
+# append() 方法可以追加元素到list末尾
+classmates.append("Adam")
 print(classmates)
-classmates.insert(1, "Jack")  # insert() 方法可以把元素插入到指定的位置
+
+# insert() 方法可以把元素插入到指定的位置
+classmates.insert(1, "Jack")
 print(classmates)
-classmates.pop()  # pop() 方法可以删除list末尾的元素
+
+# pop() 方法可以删除list末尾的元素
+classmates.pop()
 print(classmates)
-classmates.pop(1)  # pop(i) 方法可以删除list指定位置的元素
+
+# pop(i) 方法可以删除list指定位置的元素
+classmates.pop(1)
 print(classmates)
-classmates[1] = "Sarah"  # list中的元素也可以直接赋值
+
+# list中的元素也可以直接赋值
+classmates[1] = "Sarah"
 print(classmates)
 
 ## tuple是一种有序的集合，一旦初始化就不能修改
