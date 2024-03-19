@@ -1,9 +1,7 @@
 ## 用于解决多 if 语句判断的问题，使用 match 语句
-# 适用于 Python 3.10 以上版本
-
+# * 适用于 Python 3.10 以上版本
 # 单变量匹配
 score = "B"
-
 match score:
     case "A":
         print("优秀")
@@ -16,12 +14,12 @@ match score:
 
 # 复杂匹配：多个值、一定范围、多个条件
 age = 15
-
 match age:
     case x if x < 10:
         print(f"< 10 years old : {x}")
     case 10:
         print("10 years old.")
+        # 使用 | 合并多个条件
     case 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18:
         print("11~18 years old.")
     case 19:
@@ -33,7 +31,6 @@ match age:
 args = ["gcc", "hello.c", "world.c"]
 # args = ['clean']
 # args = ['gcc']
-
 match args:
     # 如果仅出现gcc，报错:
     case ["gcc"]:

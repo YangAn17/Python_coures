@@ -1,5 +1,4 @@
 ## list是一种有序的集合，可以随时添加和删除其中的元素
-#
 classmates = ["Michael", "Bob", "Tracy"]
 print(classmates)
 
@@ -26,15 +25,19 @@ print(classmates)
 classmates[1] = "Sarah"
 print(classmates)
 
+
 ## tuple是一种有序的集合，一旦初始化就不能修改
-# tuple所谓的不变是说指向的元素不变，即指向'a'，就不能改成指向'b'，但指向的'a'本身是可变的
-#
+# 为了避免歧义，tuple定义时，元素后面加上逗号
 t = 1
 print(t)  # 这是一个数
 t = (1,)
 print(t)  # 这是一个tuple
 
+"""
+    tuple所谓的不变是说指向的元素不变，
+    即指向'a'，就不能改成指向'b'，但指向的'a'本身是可变的
+"""
 t = ("a", "b", ["A", "B"])
 t[2][0] = "X"
 t[2][1] = "Y"
-print(t)  # tuple不变性的体现
+print(t)
